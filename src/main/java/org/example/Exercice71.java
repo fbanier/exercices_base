@@ -23,6 +23,10 @@ public class Exercice71 {
         for (char voyelle : voyelles) {
             if (voyelle == character) isVoyelle = true;
         }
+        // OU
+        if((character == 'a') || (character == 'e') || (character == 'i') || (character == '0' || (character == 'u') || (character == 'y'))){
+            isVoyelle = true;
+        }
 
         if(isVoyelle) System.out.println("C'est une voyelle");
         else System.out.println("C'est une consonne");
