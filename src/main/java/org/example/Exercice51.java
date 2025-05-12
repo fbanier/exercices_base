@@ -12,9 +12,14 @@ public class Exercice51 {
         * */
 
         String nom, prenom;
-        nom = "BOND";
-        prenom = "James";
+
         Scanner scn = new Scanner(System.in);
+        System.out.println("Quel est votre nom ?");
+        nom = scn.nextLine();
+
+        System.out.println("Quel est votre prénom ?");
+        prenom = scn.nextLine();
+
         System.out.println("Bonjour "+prenom +" "+ nom);
     }
 }
