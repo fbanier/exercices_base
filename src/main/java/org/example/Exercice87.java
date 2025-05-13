@@ -11,10 +11,8 @@ public class Exercice87 {
         3.Écrire un programme qui permet de savoir si un nombre est fort
          */
 
-        int nbrInitial;
-        int nbr;
-        int chiffre = 0;
-        int fac = 1;
+        int nbrInitial, nbr, chiffre, fac;
+        int somFac = 0;
 
         Scanner scn = new Scanner(System.in);
         System.out.println("Saisir un nombre :");
@@ -23,13 +21,16 @@ public class Exercice87 {
         nbr = nbrInitial;
 
         while (nbr > 0) {
+            fac = 1;
             chiffre = nbr%10;
-
+            for (int i = 1; i <= chiffre; i++){
+                fac = fac * i;
+            }
+            somFac += fac;
             nbr = nbr / 10;
         }
 
-
-
-
+        if(somFac == nbrInitial) System.out.printf("Il est fort ce nombre ! ");
+        else System.out.printf("Ce n'est pas un nombre fort");
     }
 }
