@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Exercice87 {
     public static void main(String[] args) {
         /*
@@ -9,8 +11,21 @@ public class Exercice87 {
         3.Écrire un programme qui permet de savoir si un nombre est fort
          */
 
+        int nbrInitial;
+        int nbr;
+        int chiffre = 0;
+        int fac = 1;
 
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Saisir un nombre :");
+        nbrInitial = scn.nextInt();
 
+        nbr = nbrInitial;
+
+        while (nbr > 0) {
+            System.out.println(nbr%10);
+            nbr = nbr / 10;
+        }
 
 
     }

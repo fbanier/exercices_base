@@ -25,11 +25,14 @@ public class Exercice73 {
             if (mois > 12) mois = 0;
         }
 
+
         // Afficher le nombre de jours du mois
-        if(mois%2 == 1) System.out.println("31 jours");
-        else{
-            if(mois != 2) System.out.println("30 jours");
-            else System.out.println("28 jours");
+        switch (mois){
+            case 1,3,5,7,8,10,12 -> System.out.println("31 jours");
+            case 4,6,9,11 -> System.out.println("30 jours");
+            case 2 -> System.out.println("28 ou 29 jours");
+            default -> System.out.println("Saisie invalide");
         }
+
     }
 }

@@ -16,10 +16,9 @@ public class Exercice72 {
         System.out.println("Saisir un nombre :");
         nbr = scn.nextInt();
 
-        // Si le nombre est inférieur à 1 et supérieur à 7, afficher un messaged'erreur
+        // Si le nombre est inférieur à 1 et supérieur à 7, afficher un message d'erreur
 
         if(nbr < 1 || nbr > 7) nbr = 0;
-
         while (nbr < 1){
             System.out.println("Erreur : veuillez saisir un nombre entre 1 et 7 :");
             nbr = scn.nextInt();
