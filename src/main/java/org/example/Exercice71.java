@@ -16,14 +16,8 @@ public class Exercice71 {
         input = scn.nextLine().toLowerCase();
         character = input.charAt(0);
 
-        // A l'aide des structures conditionnelles, déterminer si le caractère est une consonne ou une voyelle
-        char[] voyelles = {'a', 'e', 'i', 'o', 'u', 'y'};
         boolean isVoyelle = false;
 
-        for (char voyelle : voyelles) {
-            if (voyelle == character) isVoyelle = true;
-        }
-        // OU
         if((character == 'a') || (character == 'e') || (character == 'i') || (character == '0' || (character == 'u') || (character == 'y'))){
             isVoyelle = true;
         }
