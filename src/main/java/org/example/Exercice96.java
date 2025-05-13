@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Arrays;
-
 public class Exercice96 {
     public static void main(String[] args) {
         /*
