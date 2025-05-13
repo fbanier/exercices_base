@@ -10,21 +10,25 @@ public class Exercice82 {
 
         //Déclarer une variable nombre
         int nbr;
-        int som = 0;
-        int som2 = 0;
-        int cpt = 1;
 
         Scanner scn = new Scanner(System.in);
         System.out.println("Veuillez entrer un nombre : ");
         nbr = scn.nextInt();
 
-        while(som != nbr){
-            for (int i = 0; som2 <= nbr; i++){
-                som2 = cpt + i;
-                System.out.println(cpt + " + " + i + " = "+ som2);
+        //Premiere boucle qui gere le début de la liste (on peut faire cpt < nbr / 2 +1 parce qu'on ira jamais plus loin que la moitié
+        for (int cpt = 1; cpt < nbr; cpt++ ){
+            String result = nbr + " = " + cpt;
+            int som = cpt;
+            // seconde boucle qui permet de calculer la reste de la suite :
+            for (int suite = cpt + 1; cpt <  nbr; suite++){
+                result += " + " + suite;
+                som += suite;
+
+                // Si on dépasse, on sort de la boucle
+                if(som > nbr) break;
+                // si la somme est égales au nombre, on affiche le résultat et on sort de la boucle
+                else if (som == nbr) System.out.println(result);
             }
-            som = som2;
-            cpt++;
         }
     }
 }
