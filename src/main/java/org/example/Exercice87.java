@@ -23,9 +23,12 @@ public class Exercice87 {
         nbr = nbrInitial;
 
         while (nbr > 0) {
-            System.out.println(nbr%10);
+            chiffre = nbr%10;
+
             nbr = nbr / 10;
         }
+
+
 
 
     }
