@@ -14,6 +14,10 @@ public class Exercice71 {
         Scanner scn = new Scanner(System.in);
         System.out.println("Saisir un caractère :");
         input = scn.nextLine().toLowerCase();
+        while (input.length() > 1){
+            System.out.println("Erreur, veuillez saisir un caractère unique :");
+            input = scn.nextLine().toLowerCase();
+        }
         character = input.charAt(0);
 
         boolean isVoyelle = false;
