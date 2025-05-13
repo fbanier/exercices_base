@@ -13,13 +13,13 @@ public class Exercice85 {
         5.Si le chiffre saisi est égal au chiffre aléatoire, écrire : Vous avez gagné en Xtentatives
          */
 
-        int rand = (int)(Math.random() * 101);
+        int rand = (int)(Math.random() * 100) + 1;
         int cpt = 1;
         int nbr = 0;
 
         Scanner scn = new Scanner(System.in);
 
-        while(nbr != rand){
+        while(true){
             System.out.println("Saisir un nombre");
             nbr = scn.nextInt();
             if(nbr == rand) break;
