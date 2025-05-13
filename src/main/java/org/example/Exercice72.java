@@ -16,6 +16,8 @@ public class Exercice72 {
         System.out.println("Saisir un nombre :");
         nbr = scn.nextInt();
 
+        // Si le nombre est inférieur à 1 et supérieur à 7, afficher un messaged'erreur
+
         if(nbr < 1 || nbr > 7) nbr = 0;
 
         while (nbr < 1){
@@ -24,6 +26,7 @@ public class Exercice72 {
             if (nbr > 7) nbr = 0;
         }
 
+        // Afficher le jour de la semaine en lettre en fonction du nombre passé
         String[] jours = {"", "Lundi", "Mardi", "Mercredi", "Vendredi", "Samedi", "Dimanche"};
 
         System.out.println(jours[nbr]);
